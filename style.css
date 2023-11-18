@@ -1,0 +1,220 @@
+@import url(https://db.onlinewebfonts.com/c/bdc7ceb7198369b3c4022bfd2b95b080?family=Mary+Ann+Bold);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background-image: url(./images/stage.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: "Mary Ann Bold";
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(14, 15, 93, 0.507);
+}
+
+.navbar,
+footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  font-size: 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+}
+
+.colored {
+  color: #f4382a;
+}
+.navbar ul {
+  list-style: none;
+  width: 400px;
+  color: white;
+  justify-content: space-around;
+  font-size: 22px;
+}
+
+.navbar ul li:hover {
+  transform: translateY(-25%);
+}
+.navbar ul li {
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar svg {
+  width: 25px;
+  height: 25px;
+  transform: rotate(-180deg);
+}
+
+footer {
+  font-size: 22px;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+}
+footer .ext-link {
+  display: flex;
+}
+.scroll-msg {
+  color: #1d2397;
+}
+.scroll-msg img {
+  width: 70px;
+  height: 70px;
+  transition: 80ms;
+  animation: updown 2.5s linear infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-10%);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+.social {
+  width: 330px;
+  justify-content: space-between;
+}
+.ext-link svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.ext-link > a {
+  width: auto;
+  margin: 10px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  max-width: 800px;
+  width: 70%;
+  height: 500px;
+  flex-direction: column;
+  justify-content: space-around !important;
+}
+
+.main .heading {
+  text-align: center;
+  font-size: 20px;
+}
+
+.main .heading p {
+  font-size: 45px;
+  font-weight: 200 !important;
+}
+
+.countdown {
+  font-size: 40px;
+  width: 90%;
+  height: 100px;
+  justify-content: space-around;
+}
+
+.countdown > div {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.countdown > div,
+.countdown span {
+  text-align: center;
+  font-size: 150px !important;
+  font-weight: lighter;
+}
+
+.countdown > div label {
+  position: absolute;
+  font-size: 30px;
+  transform: translateY(230%);
+}
+
+.buyBtn {
+  background: #484fb4;
+  border-radius: 999px;
+  box-shadow: #484fb4 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  padding: 20px 30px;
+  transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.buyBtn:hover {
+  transform: translateY(-2px);
+}
+
+.buyBtn:active {
+  transform: translateY(0);
+}
+
+.blink {
+  animation: blink 1.5s infinite linear;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
