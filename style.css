@@ -162,7 +162,7 @@ footer div {
 .countdown > div,
 .countdown span {
   text-align: center;
-  font-size: 150px !important;
+  font-size: 100px !important;
   font-weight: lighter;
 }
 
@@ -179,7 +179,7 @@ footer div {
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 24px;
   opacity: 1;
   outline: 0 solid transparent;
